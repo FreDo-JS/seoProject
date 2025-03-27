@@ -43,43 +43,120 @@ footer {
 
 
 /* RWD */
+/* Responsive Design */
 
-
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  main, header {
+      width: 90%;
   }
 
   nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+      margin: 0 20px;
+      font-size: 0.9em;
   }
 
-  main {
-    padding: 15px;
+  section {
+      margin: 40px 20px;
+  }
+
+  figure img {
+      max-width: 100%;
+      height: auto;
   }
 }
 
-/* Smartfony (480px i mniej) */
-@media screen and (max-width: 480px) {
+/* Small Tablets and Large Phones (480px - 767px) */
+@media screen and (max-width: 767px) {
   body {
-    padding: 10px;
+      font-size: 14px;
   }
 
-  header h1 {
-    font-size: 22px;
+  main, header {
+      width: 95%;
   }
 
-  main {
-    padding: 10px;
+  nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   nav a {
-    font-size: 16px;
-    padding: 8px;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  section {
+      margin: 30px 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.3em;
+  }
+
+  h3 {
+      font-size: 1.1em;
+  }
+
+  footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer li {
+      margin: 10px 0;
+  }
+}
+
+/* Mobile Phones (up to 479px) */
+@media screen and (max-width: 479px) {
+  body {
+      font-size: 12px;
+  }
+
+  main, header {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  section {
+      margin: 20px 5px;
+  }
+
+  figure {
+      margin: 15px 0;
+  }
+
+  figure img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  footer {
+      height: auto;
+  }
+}
+
+/* Additional Mobile Improvements */
+@media screen and (max-width: 767px) {
+  * {
+      text-align: left;
+  }
+
+  img {
+      display: block;
+      margin: 0 auto;
+  }
+
+  p, h1, h2, h3 {
+      padding: 5px;
   }
 }
